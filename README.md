@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/multi-signal.svg?style=flat-square)](https://www.npmjs.org/package/axios)
+[![npm version](https://img.shields.io/npm/v/multi-signal.svg?style=flat-square)](https://www.npmjs.org/package/multi-signal)
 [![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=multi-signal&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=multi-signal)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/multi-signal?style=flat-square)](https://bundlephobia.com/package/multi-signal@latest)
 [![npm downloads](https://img.shields.io/npm/dm/multi-signal.svg?style=flat-square)](https://npm-stat.com/charts.html?package=multi-signal)
@@ -31,6 +31,7 @@
     - [Using with Fetch](#using-with-fetch)
     - [Using with Axios](#using-with-axios)
     - [Using with addEventListener](#using-with-addeventlistener)
+- [Troubleshooting](#troubleshooting)
 - [Credits](#credits)
 - [License](#license)
 
@@ -136,6 +137,17 @@ X.addEventListener('event', (e) => { ... }, {
 ```
 
 > **_Note:_** You can use as many AbortSignals as you want in any order.
+
+## Troubleshooting
+
+#### 1. `MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal].`
+By default, Node.js has maximum listener limit of `10`. you can increase the limit depending on your use case:
+
+```js
+import events from 'events';
+
+events.setMaxListeners(100);
+``` 
 
 ## Credits
 
