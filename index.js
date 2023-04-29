@@ -27,4 +27,4 @@ const multiSignal = (...inputSignals) => {
     return signal;
 };
 exports.multiSignal = multiSignal;
-exports.default = exports.multiSignal;
+module.exports = exports.multiSignal;

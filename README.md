@@ -14,7 +14,6 @@
 <div align="center">
 
 [![npm version](https://img.shields.io/npm/v/multi-signal.svg?style=flat-square)](https://www.npmjs.org/package/axios)
-[![Build status](https://img.shields.io/github/actions/workflow/status/rashidshamloo/multi-signal/ci.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/rashidshamloo/multi-signal/actions/workflows/ci.yaml)
 [![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=multi-signal&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=multi-signal)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/multi-signal?style=flat-square)](https://bundlephobia.com/package/multi-signal@latest)
 [![npm downloads](https://img.shields.io/npm/dm/multi-signal.svg?style=flat-square)](https://npm-stat.com/charts.html?package=multi-signal)
@@ -62,16 +61,16 @@ Using yarn:
 $ yarn add multi-signal
 ```
 
-Once the package is installed, you can import the function:
-
-```js
-import { multiSignal } from 'multi-signal';
-```
-
-You can also use the default export:
+Once the package is installed, you can `import` the function:
 
 ```js
 import multiSignal from 'multi-signal';
+```
+
+You can also use `require`:
+
+```js
+const multiSignal = require('multi-signal');
 ````
 
 ## Usage

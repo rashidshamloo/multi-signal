@@ -1,6 +1,6 @@
 {
   "name": "multi-signal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Merges multiple AbortSignals into a single signal. returned signal will be aborted if any of the input signals are aborted.",
   "main": "index.js",
   "types": "./index.d.ts",

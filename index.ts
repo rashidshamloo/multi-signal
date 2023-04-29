@@ -40,4 +40,4 @@ export const multiSignal: {
   return signal;
 };
 
-export default multiSignal;
+module.exports = multiSignal;

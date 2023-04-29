@@ -1,4 +1,4 @@
-import { multiSignal } from '.';
+import multiSignal from '.';
 import events from 'events';
 
 describe('multiSignal(): Testing different abort methods', () => {
